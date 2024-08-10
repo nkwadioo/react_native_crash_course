@@ -5,7 +5,7 @@ import {  Text, View } from 'react-native';
 export default function App() {
   return (
     <View className="flex-1 items-center justify-center bg-white">
-      <Text className="text-3xl">Aora Native wind</Text>
+      <Text className="text-3xl font-pblack">Aora Assets [fonts]</Text>
       <StatusBar style="auto" />
       <Link href="/profile" style={{ color: 'blue' }}> Go to Profile</Link>
     </View>
