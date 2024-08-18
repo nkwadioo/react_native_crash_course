@@ -10,12 +10,13 @@ import { getAllPosts } from '../../lib/appwrite'
 import useAppwrite from '../../lib/useAppwrite'
 
 const Home = () => {
-  const { data: posts } = useAppwrite(getAllPosts)
+  const { data: posts, refetch } = useAppwrite(getAllPosts)
 
   const [refresh, setRefresh] = useState(false)
   const onRefresh = async () => {
     setRefresh(true)
     // recall videos -> if any new videos append
+    await refetch()
     setRefresh(false)
   }
 
