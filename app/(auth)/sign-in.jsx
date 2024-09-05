@@ -27,6 +27,7 @@ const SignIn = () => {
       router.replace('/home')
     } catch (error) {
       Alert.alert('Error', error.message)
+      console.log('Failed to login => ', error.message)
     } finally {
       setIsSubmitting(false)
     }
