@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from 'react-native'
 import { Slot, SplashScreen, Stack } from 'expo-router'
 import { useFonts } from 'expo-font'
-import { useEffect } from 'react'
+import React, { useEffect } from 'react'
 import  GlobalProvider  from '../context/GlobalProvider'
 
 // prevent spash screen auto hiding before assets have loaded
